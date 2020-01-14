@@ -313,7 +313,7 @@ func (h *HCI) sktLoop() {
 			if strings.HasPrefix(err.Error(), "unsupported vendor packet:") {
 				_ = logger.Error("skt: %v", err)
 			} else {
-				log.Printf("skt: %v", err)
+				logger.Info("skt: %v", err)
 				continue
 			}
 		}
