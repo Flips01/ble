@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-ble/ble"
-	"github.com/go-ble/ble/linux/hci/cmd"
-	"github.com/go-ble/ble/linux/hci/evt"
-	"github.com/go-ble/ble/linux/hci/socket"
+	"github.com/Flips01/ble"
+	"github.com/Flips01/ble/linux/hci/cmd"
+	"github.com/Flips01/ble/linux/hci/evt"
+	"github.com/Flips01/ble/linux/hci/socket"
 	"github.com/pkg/errors"
 )
 
