@@ -96,6 +96,7 @@ func newConn(h *HCI, param evt.LEConnectionComplete) *Conn {
 					_ = logger.Error("recombine failed: ", "err", err)
 				}
 				close(c.chInPDU)
+				c.Close()
 				return
 			}
 		}
